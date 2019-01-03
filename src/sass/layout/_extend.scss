@@ -1,0 +1,89 @@
+@import 'base/_color';
+@import 'base/_variables';
+@import 'layout/_mixin';
+
+%title {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-family: $title-font;
+	font-weight: 700;
+
+}
+
+%button {
+	@include border-radius(0px);
+	font-size: $regular-font !important;
+    padding: 10px 35px !important;
+    font-weight: bold !important;
+    cursor: pointer;
+}
+
+%button-hover {
+	background-color: transparent !important;
+	color: $dark-blue !important;
+}
+
+%button-white-hover {
+	background-color: transparent !important;
+	color: $white !important;
+	border: 1px solid $brand-color !important;
+}
+
+%side-banner {
+	background-size: cover !important;
+	padding: 80px 0;
+	text-align: left;
+	padding-left: 30px;
+}
+
+%banner-design {
+    height: 4px;
+    background: #bbb;
+    margin-top: 25px;
+    opacity: 0.4;
+    content: "";
+	position: absolute;
+}
+
+%parallax {  
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+	padding: 80px 0;
+}
+
+%span {
+	font-size: $regular-font;
+	text-transform: uppercase;
+}
+
+%static-banner {
+	background-size: cover;
+    padding: 80px 0;
+}
+
+%design {
+	content: "";
+    position: absolute;
+    background: #a23237;
+}
+
+%social-icons {
+	border: 1px solid $white;
+    @include border-radius(24px);
+}
+
+%rounded-divs {
+	width: 215px;
+    height: 215px;
+    border-radius: 103px;
+}
+
+%curly-lines {
+    font-size: 23px;
+    letter-spacing: -7px;
+    color: $brand-color;
+    margin-bottom: 0px !important;
+    font-weight: 700;
+}
