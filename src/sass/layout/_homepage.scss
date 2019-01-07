@@ -18,8 +18,9 @@ header {
     top: 0;
 	z-index: 999;
 	
-	#navbar-brand .fa-circle-notch {
-		color: $brand-color;
+	.navbar-brand {
+		color: $brand-color !important;
+		font-size: 25px !important;
 	}
 
 	.menu {
@@ -27,7 +28,7 @@ header {
 		box-shadow: 0px 0px 6px 1px #ccc;
 		
 		@include respond-to(normalDevices) {
-			padding: .5rem 4rem !important;
+			padding: 1rem 4rem !important;
 		}
 
 		ul {
@@ -387,18 +388,7 @@ header {
 	    background-color: $carousel-bg !important;
 	    height: 25% !important;
 	    border-radius: 58% !important;
-
-	    @include respond-to(handhelds) {
-			// width: 7% !important;
-			// height: 9% !important;
-			background-color: transparent !important;
-		}
-
-		@include respond-to(tablets) {
-			// height: 25% !important;
-			background-color: transparent !important;
-		}
-
+		background-color: transparent !important;
 
 	    span {
 	    	margin: 0px !important;
@@ -493,8 +483,8 @@ footer {
 			display: none;
 		}
 
-		img {
-			width: 90%;
+		svg.fa-circle-notch{
+			font-size: 50px;
 		}
 
 		p {
